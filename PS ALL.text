@@ -190,7 +190,7 @@ Q1.find the largest value
                 console.log(`${num} is a prime number`);
             }
         }
-
+    
 
 
 22 - 11 - 24------
@@ -507,8 +507,6 @@ Q1.find the largest value
         console.log(non_primes);
 
         
-        
-        
         Q21. find the first non repeating character in a string
 
         let str = "hello world"
@@ -605,7 +603,7 @@ x
 
         WITH WHILE LOOP----
 
-            let first = 0
+        let first = 0
         let second = 1
 
         count = 0
@@ -663,7 +661,7 @@ x
 
         or----
 
-            let str = "javascript"
+        let str = "javascript"
         let len = 0
         for (i = 0; ; i++) {
             if (str[i] == undefined) {
@@ -971,6 +969,8 @@ x
         char === sub ? console.log(true) : console.log(false);
 
 
+29 - 11 - 24--------- 
+
         Q45.find most repated characher
 
         let str = "vvvvijaayyyyyyyyy talapathy"
@@ -1028,6 +1028,8 @@ x
         }
         console.log(sec_most, sec_most_ocu);
         console.log(most_rep, most_ocu);
+        03 - 12 - 25-----
+        
 
 
 
