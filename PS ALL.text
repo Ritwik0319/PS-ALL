@@ -190,7 +190,7 @@ Q1.find the largest value
                 console.log(`${num} is a prime number`);
             }
         }
-    
+
 
 
 22 - 11 - 24------
@@ -670,7 +670,7 @@ x
             len++
         }
         console.log(len);
-
+ 
         Q29.string replace and replaceAll method without methods
 
         let str = "java scriptj"
@@ -714,7 +714,7 @@ x
 
         without reversing--------
 
-            let str = "javascript"
+        let str = "javascript"
         let ser_val = "a"
         let ind = -1
         for (i = 0; i < str.length; i++) {
@@ -942,7 +942,7 @@ x
         console.log(count);
 
 
-        Q43.string statrsWith method without using methods
+        Q43.string statrs With method without using methods
 
         let str = "javascript"
         let char = "javas"
@@ -1028,7 +1028,12 @@ x
         }
         console.log(sec_most, sec_most_ocu);
         console.log(most_rep, most_ocu);
+
+
+
+
         03 - 12 - 25-----
+        
         
 
 
