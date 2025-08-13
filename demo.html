@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let inp = document.createElement("input")
+        // let btn = document.createElement("button")
+        // btn.innerHTML = "Hide"
+
+        // let is_click = true
+        // btn.addEventListener("click", () => {
+        //     if (is_click) {
+        //         btn.innerHTML = "Show"
+        //         inp.setAttribute("type","password")
+        //         is_click = false
+        //     }
+        //     else {
+        //         btn.innerHTML = "Hide"
+        //         inp.setAttribute("type","text")
+        //         is_click = true
+        //     }
+        // })
+
+
+        // document.body.append(inp, btn)
+
+
+
+        //    let para=document.createElement("p")
+
+        //    setInterval(()=>{
+        //     let date= new Date
+        //     para.innerHTML=date.toLocaleTimeString()
+        //    },1000)
+        //    document.body.append(para)
+
+
+
+
+
+
+
+        let para = document.createElement("p")
+        let count=10
+        if(count){
+            let int=setInterval(()=>{
+                para.innerHTML=count
+                count--
+                if(count==-1){
+                    para.innerHTML="BOOM"
+                    clearInterval(int)
+                }
+            },1000)
+        }
+        document.body.append(para)
+
+    </script>
+</body>
+
+</html>
