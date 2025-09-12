@@ -46,20 +46,27 @@
 
 
 
-        let para = document.createElement("p")
-        let count=10
-        if(count){
-            let int=setInterval(()=>{
-                para.innerHTML=count
-                count--
-                if(count==-1){
-                    para.innerHTML="BOOM"
-                    clearInterval(int)
-                }
-            },1000)
-        }
-        document.body.append(para)
+        // let para = document.createElement("p")
+        // let count=10
+        // if(count){
+        //     let int=setInterval(()=>{
+        //         para.innerHTML=count
+        //         count--
+        //         if(count==-1){
+        //             para.innerHTML="BOOM"
+        //             clearInterval(int)
+        //         }
+        //     },1000)
+        // }
+        // document.body.append(para)
 
+
+        // console.log(this)//{}
+        function hello() {
+            console.log(this);
+
+        }
+        hello()
     </script>
 </body>
 
