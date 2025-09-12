@@ -1272,8 +1272,615 @@ x
         }
         console.log(str);
         
-            
 
+        // 4 - 12 - 24-----------------------
+
+        // Q55.if the sum of element is even - true, odd - false
+        // inp = [202, 89, 112, 88]   op = [true, false, true, true]
+
+        // const arr = [202, 89, 112, 88]
+        // let res = []
+        // for (i of arr) {
+        //     i = i.toString()
+        //     // console.log(i)
+        //     let emp = 0
+        //     for (j of i) {
+        //         // console.log(j)
+        //         emp += Number(j)
+        //     }
+        //     if (emp % 2 == 0) {
+        //         res.push(true)
+        //     } else {
+        //         res.push(false)
+        //     }
+        // }
+        // console.log(res)
+
+
+
+        // Q56.sum of the each elelment in an array
+        // inp = [202, 89, 112, 88]   op = [ 4, 17, 4, 16 ]
+
+        // let res2 = []
+        // for (i of arr) {
+        //     i = i.toString()
+        //     // console.log(i)
+        //     let emp = 0
+        //     for (j of i) {
+        //         // console.log(j)
+        //         emp += Number(j)
+        //     }
+        //     res2.push(emp)
+        // }
+        // console.log(res2)
+
+
+        // Q57.Recurssion-a function caling it's self agin and again
+
+        // // let num = 7; // Number for which we want to find the factorial
+
+        // // Recursive function to calculate factorial
+        // function factorial(num) {
+        //     // Base case: If number is 1, factorial is 1
+        //     if (num == 1) { // Example sequence: 7 → 6 → 5 → 4 → 3 → 2 → 1
+        //         return 1;
+        //     } else {
+        //         // Recursive case: Multiply current number with factorial of previous number
+        //         return num * factorial(num - 1);
+        //     }
+        // }
+
+        // // Flow for num = 7:
+        // // factorial(7)
+        // // → 7 * factorial(6)
+        // // → 7 * (6 * factorial(5))
+        // // → 7 * (6 * (5 * factorial(4)))
+        // // → 7 * (6 * (5 * (4 * factorial(3))))
+        // // → 7 * (6 * (5 * (4 * (3 * factorial(2)))))
+        // // → 7 * (6 * (5 * (4 * (3 * (2 * factorial(1))))))
+        // // factorial(1) returns 1 (base case)
+        // // Final result: 7 * 6 * 5 * 4 * 3 * 2 * 1
+
+        // console.log(factorial(num)); // Output: 5040
+
+
+
+        // Q58.TRIM method
+
+        // const str = "     java script          "; // Original string with spaces at start and end
+        // let emp = "";  // Temporary variable to store trimmed string (front spaces removed)
+        // let count = 0; // Counter to track when we start adding characters
+
+        // // Loop through each character in the string
+        // for (let i of str) {
+        //     // Condition: Add the character if it's NOT a space OR we already started adding characters
+        //     if (i !== " " || count > 0) {
+        //         emp += i;   // Append character to emp
+        //         count++;    // Increment count so spaces in the middle are allowed
+        //     }
+        // }
+        // console.log(emp); // This is the string without leading spaces
+
+        // let emp2 = "";  // Temporary variable to store final trimmed string (end spaces removed)
+        // let count2 = 0; // Counter to track when we start adding characters from the back
+
+        // // Loop through the string in reverse
+        // for (i = emp.length - 1; i >= 0; i--) {
+        //     console.log(emp[i]); // Debug: show each character from end to start
+
+        //     // Condition: Add the character if it's NOT a space OR we already started adding characters
+        //     if (emp[i] !== " " || count2 > 0) {
+        //         emp2 = emp[i] + emp2; // Prepend character to emp2 (to maintain correct order)
+        //         count2++; // Increment count so spaces in the middle are allowed
+        //     }
+        // }
+
+        // console.log(emp2); // This is the string without leading and trailing spaces
+
+
+
+        // 5-12-24-----
+
+        // Q59. arr.push method
+
+        // let num = 1
+        // let arr = []
+        // arr[arr.length] = num
+        // console.log(arr)
+
+
+
+        // Q60. arr.pop method
+        // let arr = [1, 2, 3, 4, 5, 6]
+        // const arr_pop = (arr) => {
+        //     if (arr.length > 0) {
+        //         arr.length = arr.length - 1
+        //     }
+        //     console.log(arr)
+        // }
+        // arr_pop(arr)
+        // arr_pop(arr)
+        // arr_pop(arr)
+        // arr_pop(arr)
+        // arr_pop(arr)
+        // arr_pop(arr)
+
+
+
+
+
+        // Q61.print the index's of even numbers in even index
+
+        // const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] //2
+        // for (i = 0; i < arr.length; i++) {
+        //     if (arr[i] % 2 == 0 && i % 2 == 0) {
+        //         console.log(arr[i])
+        //     }
+        // }
+
+
+
+        // Q62.get uniques in an array
+
+        // const arr = [1, 2, 1, 6, 9, 9, 1, 20, 3, 3, 4, 3, 4, 5, 5, 1]
+        // let unq = []
+        // for (i of arr) {
+        //     if (!unq.includes(i)) {
+        //         unq.push(i)
+        //     }
+        // }
+        // console.log(unq)
+
+
+
+
+        // Q63.includes method in arr
+
+        // const arr = [1, 2, 1, 6, 9, 9, 1, 20, 3, 3, 4, 3, 4, 5, 5, 1]
+        // const num = 1
+        // const Includes = (num, arr) => {
+        //     let present = false;
+        //     for (i of arr) {
+        //         if (i == num) {
+        //             present = true
+        //             break
+        //         }
+        //     }
+        //     return present
+        // }
+        // console.log(Includes(num, arr))
+
+
+
+        // Q64.print the given op
+
+        // // Original string
+        // const str = "abc"; // Expected output: "bcd"
+
+        // // Variable to store the new string after shifting characters
+        // let emp = "";
+
+        // // Loop through each index of the string
+        // for (i in str) {
+        //     // Get the ASCII code of the character at position i
+        //     let code = str.charCodeAt(i);
+
+        //     // Convert ASCII code to the next character (shift by +1)
+        //     emp += String.fromCharCode(code + 1);
+        // }
+
+        // // Print the resulting string
+        // console.log(emp);
+
+
+
+        // Q65.print the op
+        // if vowel print 2nd next character
+        // const str = "hello world"; // Expected output: "hgllq wqrld"
+
+        // // Empty string to store the modified result
+        // let emp = "";
+
+        // // String containing all vowels (both uppercase and lowercase)
+        // let vow = "aeiouAEIOU";
+
+        // // Loop through each index in the string
+        // for (i in str) {
+
+        //     // Check if the current character is a vowel
+        //     if (vow.includes(str[i])) {
+
+        //         // Get the ASCII code of the vowel
+        //         let code = str.charCodeAt(i);
+        //         console.log(code); // For debugging: log ASCII value
+
+        //         // Convert ASCII code to a new character shifted by +2
+        //         emp += String.fromCharCode(code + 2);
+        //     }
+        //     else {
+        //         // If not a vowel, just add the character as it is
+        //         emp += str[i];
+        //     }
+        // }
+
+        // // Print the final modified string
+        // console.log(emp);
+
+
+        // Q66.print the op
+
+        // // Original string
+        // const str = "abc"; // Expected output: "zyx"
+
+        // // Empty string to store the reversed alphabet mapping result
+        // let emp = "";
+
+        // // Loop through each index in the string
+        // for (i in str) {
+        //     // Get the ASCII code of the current character
+        //     let code = str.charCodeAt(i);
+
+        //     // Check if the character is a lowercase letter (ASCII 'a' = 97)
+        //     if (code >= 97) {
+        //         // Find the position of the letter in the alphabet (0 for 'a', 1 for 'b', etc.)
+        //         let diff = code - 97;
+
+        //         // Map it to the "opposite" letter (a→z, b→y, c→x, etc.)
+        //         emp += String.fromCharCode(122 - diff); // 122 = ASCII code for 'z'
+        //     }
+        // }
+
+        // // Print the transformed string
+        // console.log(emp);
+
+
+        // Q67.if elememt contains duplicates return true else false
+        // arr = [202, 89, 112, 88] op=[true,false,true,true]
+        // let op = []
+        // for (i of arr) {
+        //     i = i.toString()
+        //     let unq = ""
+        //     let is_duplicate = false;
+        //     for (j of i) {
+        //         if (unq.includes(j)) {
+        //             is_duplicate = true;
+        //             break;
+        //         } else {
+        //             unq += j
+        //         }
+        //     }
+        //     op.push(is_duplicate)
+        // }
+        // console.log(op)
+
+
+        // or-------------
+
+        // for (i of arr) {
+        //     let emp = ""
+        //     for (j of i) {
+        //         if (!emp.includes(j)) {
+        //             emp += j
+        //         }
+        //     }
+        //     if (emp.length !== i.length) {
+        //         console.log(i, "duplicales")
+        //     } else {
+        //         console.log(i, "uniques")
+        //     }
+        // }
+
+
+        // 06 - 12 - 24------
+
+        // Q68.find missing nums
+        // num = "123987" op="456"
+
+        // const num = "123987"
+        // let min = num[0]
+        // let max = num[0]
+        // let op = ""
+        // for (i of num) {
+        //     if (i < min) {
+        //         min = i
+        //     }
+        //     if (i > max) {
+        //         max = i
+        //     }
+        // }
+        // for (i = min; i <= max; i++) {
+        //     if (!num.includes(i)) {
+        //         op += i
+        //     }
+        //     console.log(i)
+        // }
+        // console.log(min, max, op)
+
+        // or-----
+        // let num = 123987
+        // num = num.toString().split("").map(Number).sort()
+        // console.log(num)
+        // let start = num[0]
+        // let end = num[num.length - 1]
+        // let op = ""
+        // for (i = start; i <= end; i++) {
+        //     if (!num.includes(i)) {
+        //         op += i
+        //     }
+        // }
+        // console.log(op)
+
+
+
+
+        // Q69.sort method ass,dess
+
+        // let num = 1256446597543;
+        // num = num.toString().split("").map(Number)
+        // for (i = 0; i < num.length; i++) {
+        //     for (j = i + 1; j < num.length; j++) {
+        //         if (num[i] > num[j]) {
+        //             temp = num[i]
+        //             num[i] = num[j]
+        //             num[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(num)
+
+        // for (i = 0; i < num.length; i++) {
+        //     for (j = i + 1; j < num.length; j++) {
+        //         if (num[i] < num[j]) {
+        //             temp = num[i]
+        //             num[i] = num[j]
+        //             num[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(num)
+
+
+
+        // Q70.find missing even numbers
+
+        // let num = 123579;
+        // num = num.toString().split("").map(Number).sort()
+        // console.log(num)
+        // const start = num[0]
+        // const end = num[num.length - 1]
+        // let op = ""
+        // for (i = start; i <= end; i++) {
+        //     console.log(i)
+        //     if (i % 2 == 0 && !num.includes(i)) {
+        //         op += i
+        //     }
+        // }
+        // console.log(op)
+
+
+
+        // 09-12-24----------
+
+        // Q71.find missing prime numbers
+
+        // let arr = [2, 3, 17, 19]
+        // let op = []
+        // let start = arr[0]
+        // let end = arr[arr.length - 1]
+        // for (j = start; j < end; j++) {
+        //     let count = 0
+        //     // console.log(j)
+        //     for (i = 2; i < j; i++) {
+        //         if (j % i == 0) {
+        //             count++
+        //             break
+        //         }
+        //     }
+        //     if (count == 0) {
+        //         // console.log(j,"is prime")
+        //         if (!arr.includes(j)) {
+        //             op.push(j)
+        //         }
+        //     }
+        //     // else{
+        //     //     // console.log(j,"is not prime")
+        //     // }
+        // }
+        // console.log(op)
+
+
+
+        // Q72.find weather the array is ass dedc unorderd or same
+
+        // const arr = [10, 19, 52, 2]
+        // let is_ass = true;
+        // let is_des = true;
+        // let is_same = true;
+        // for (i = 0; i < arr.length - 1; i++) {
+        //     if (arr[i] > arr[i + 1]) {
+        //         is_ass = false
+        //     }
+        //     if (arr[i] < arr[i + 1]) {
+        //         is_des = false
+        //     }
+        //     if (arr[i] !== arr[i + 1]) {
+        //         is_same = false
+        //     }
+        // }
+        // if (is_same) {
+        //     console.log("same elements")
+        // }
+        // else if (is_ass) {
+        //     console.log("assending")
+        // }
+        // else if (is_des) {
+        //     console.log("descending")
+        // }
+        // else {
+        //     console.log("unordered")
+        // }
+
+
+        // Q73. sort the elements based on length
+
+
+        // let arr = ["hi", "all", "everyone","a"]
+        // for (i = 0; i < arr.length; i++) {
+        //     for (j = i + 1; j < arr.length; j++) {
+
+        //         if (arr[i].length > arr[j].length) {
+        //             temp = arr[i]
+        //             arr[i] = arr[j]
+        //             arr[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+
+
+        // Q74.sort the array based on alaphbitical order
+
+        // let arr = ["sai", "nikhil", "pradeep", "goutham", "raju"]
+
+        // for (i = 0; i < arr.length; i++) {
+        //     for (j = i + 1; j < arr.length; j++) {
+        //         if (arr[i][0]> arr[j][0]) {
+        //             temp = arr[i]
+        //             arr[i] = arr[j]
+        //             arr[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+
+
+        // or-----------
+
+        // for (i = 0; i < arr.length; i++) {
+        //     for (j = i + 1; j < arr.length; j++) {
+        //         if (arr[i].charCodeAt(0) > arr[j].charCodeAt(0)) {
+        //             temp = arr[i]
+        //             arr[i] = arr[j]
+        //             arr[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+
+
+
+        // Q75.find the mid element in an array
+
+        // const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+        // let mid = Math.floor(arr.length / 2)
+        // console.log(mid)
+        // if (arr.length % 2 == 0) {
+        //     console.log(arr[mid - 1], arr[mid])
+        // } else {
+        //     console.log(arr[mid])
+        // }
+
+
+
+        // Q76.sort the array based on element vowel count
+        // let arr = ["aeiou", "aeio", "aeiooooi"]
+        // const vow = "aeiouAEIOU"
+        // for (i = 0; i < arr.length; i++) {
+        //     for (j = i + 1; j < arr.length; j++) {
+        //         let c1 = 0
+        //         let c2 = 0
+        //         for (k of arr[i]) {
+        //             if (vow.includes(k)) {
+        //                 c1++
+        //             }
+        //         }
+        //         for (l of arr[j]) {
+        //             if (vow.includes(l)) {
+        //                 c2++
+        //             }
+        //         }
+        //         if (c1 < c2) {
+        //             temp = arr[i]
+        //             arr[i] = arr[j]
+        //             arr[j] = temp
+        //         }
+        //     }
+        // }
+        // console.log(arr)
+
+
+
+        // Q77. find the two elements that match the target
+
+        // const arr = [10, 20, 11, 12, 18, 30]
+        // const target = 30
+        // for (i = 0; i < arr.length; i++) {
+        //     for (j = i + 1; j < arr.length; j++) {
+        //         // console.log(arr[i],arr[j])
+        //         if (arr[i] + arr[j] == target) {
+        //             console.log(arr[i], arr[j])
+        //         } else if (arr[i] == target) {
+        //             console.log(arr[i])
+        //         } else if (arr[j] == target) {
+        //             console.log(arr[j])
+        //         }
+        //     }
+        // }
+
+
+
+
+        // 10-12-24---------
+
+        // Q78.find the rankings of array
+        // inp="20 15 26 2 98 6"
+        // op="4, 3, 5, 1, 6, 2"
+
+        // let arr = "20 15 26 2 98 6".split(" ").map(Number)
+        // let temp = []
+        // for (i of arr) {
+        //     let c = 0
+        //     for (j of arr) {
+        //         if (i > j) {
+        //             c++
+        //         }
+        //     }
+        //     console.log(c + 1)
+        // }
+
+        // --or--
+
+        // let arr = "20 15 26 2 98 6".split(" ").map(Number)
+        // let temp = []
+        // for (i of arr) {
+        //     temp.push(i)
+        // }
+        // let emp = []
+        // arr.sort((a, b) => a - b)
+        // for (i of temp) {
+        //     emp.push(arr.indexOf(i) + 1)
+        //     // console.log(temp.indexOf(i)+1)
+        // }
+        // console.log(emp)
+
+        // --or--
+        // let arr = "20 15 26 2 98 6".split(" ").map(Number)
+        // let temp = []
+        // for (i of arr) {
+        //     temp.push(i)
+        // }
+        // let emp = []
+        // arr.sort((a, b) => a - b)
+        // for (i of temp) {
+        //     for (j in arr) {
+        //         if (i === arr[j]) {
+        //             emp.push(Number(j) + 1)
+        //             // console.log(i,arr[j],Number(j)+1)
+        //         }
+        //     }
+        // }
+        // console.log(temp)
+        // console.log(emp)
 
 
 
